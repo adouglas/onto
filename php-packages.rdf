@@ -73,6 +73,35 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://adouglas.github.io/onto/php-packages#packageName -->
+
+    <owl:DatatypeProperty rdf:about="http://adouglas.github.io/onto/php-packages#packageName">
+        <rdfs:domain rdf:resource="http://adouglas.github.io/onto/php-packages#package"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://adouglas.github.io/onto/php-packages#repositoryName -->
+
+    <owl:DatatypeProperty rdf:about="http://adouglas.github.io/onto/php-packages#repositoryName">
+        <rdfs:domain rdf:resource="http://adouglas.github.io/onto/php-packages#repository"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
