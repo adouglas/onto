@@ -81,6 +81,15 @@
     
 
 
+    <!-- http://adouglas.github.io/onto/php-packages#name -->
+
+    <owl:DatatypeProperty rdf:about="http://adouglas.github.io/onto/php-packages#name">
+        <rdfs:domain rdf:resource="http://adouglas.github.io/onto/php-packages#developer"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://adouglas.github.io/onto/php-packages#packageName -->
 
     <owl:DatatypeProperty rdf:about="http://adouglas.github.io/onto/php-packages#packageName">
