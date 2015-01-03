@@ -16,7 +16,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://adouglas.github.io/onto/php-packages">
-        <rdfs:comment>A very basic ontology for the description of packages, repositories and collaborators</rdfs:comment>
+        <rdfs:comment>A very basic ontology for the description of packages, repositories and contributors</rdfs:comment>
     </owl:Ontology>
     
 
@@ -32,20 +32,20 @@
     
 
 
-    <!-- http://adouglas.github.io/onto/php-packages#collaboratesOn -->
+    <!-- http://adouglas.github.io/onto/php-packages#contributorOn -->
 
-    <owl:ObjectProperty rdf:about="http://adouglas.github.io/onto/php-packages#collaboratesOn">
+    <owl:ObjectProperty rdf:about="http://adouglas.github.io/onto/php-packages#contributorOn">
         <rdfs:domain rdf:resource="http://adouglas.github.io/onto/php-packages#developer"/>
-        <owl:inverseOf rdf:resource="http://adouglas.github.io/onto/php-packages#hasCollaborator"/>
+        <owl:inverseOf rdf:resource="http://adouglas.github.io/onto/php-packages#hasContributor"/>
         <rdfs:range rdf:resource="http://adouglas.github.io/onto/php-packages#repository"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://adouglas.github.io/onto/php-packages#hasCollaborator -->
+    <!-- http://adouglas.github.io/onto/php-packages#hasContributor -->
 
-    <owl:ObjectProperty rdf:about="http://adouglas.github.io/onto/php-packages#hasCollaborator">
-        <rdfs:range rdf:resource="http://adouglas.github.io/onto/php-packages#developer"/>
+    <owl:ObjectProperty rdf:about="http://adouglas.github.io/onto/php-packages#hasContributor">
+        <rdfs:range rdf:resource="http://adouglas.github.io/onto/php-packages#contributor"/>
         <rdfs:domain rdf:resource="http://adouglas.github.io/onto/php-packages#repository"/>
     </owl:ObjectProperty>
     
@@ -84,7 +84,7 @@
     <!-- http://adouglas.github.io/onto/php-packages#name -->
 
     <owl:DatatypeProperty rdf:about="http://adouglas.github.io/onto/php-packages#name">
-        <rdfs:domain rdf:resource="http://adouglas.github.io/onto/php-packages#developer"/>
+        <rdfs:domain rdf:resource="http://adouglas.github.io/onto/php-packages#contributor"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
@@ -119,9 +119,9 @@
     
 
 
-    <!-- http://adouglas.github.io/onto/php-packages#developer -->
+    <!-- http://adouglas.github.io/onto/php-packages#contributor -->
 
-    <owl:Class rdf:about="http://adouglas.github.io/onto/php-packages#developer">
+    <owl:Class rdf:about="http://adouglas.github.io/onto/php-packages#contributor">
         <owl:disjointWith rdf:resource="http://adouglas.github.io/onto/php-packages#package"/>
         <owl:disjointWith rdf:resource="http://adouglas.github.io/onto/php-packages#repository"/>
     </owl:Class>
